@@ -1,6 +1,6 @@
 
 class ListItem
-  def intialize(task, created_at)
+  def initialize(task, created_at)
     @task = task
     @created_at = created_at
     @completed = false
