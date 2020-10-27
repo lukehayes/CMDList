@@ -1,6 +1,9 @@
+module CMDList
 
-class List
-  def initialize()
-    puts "List Initialized"
+  class List
+    def initialize()
+      puts "List Initialized"
+    end
   end
+
 end

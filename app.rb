@@ -2,6 +2,6 @@
 
 require "./CMDList/list.rb"
 
-l = List.new
+l = CMDList::List.new
 
 
