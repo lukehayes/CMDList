@@ -16,7 +16,7 @@ module BTLR
     end
 
     def to_s
-      return @task + " | " + @created_at.to_s
+      return "Task: #{@task} :: #{@created_at} :: #{@completed}"
     end
 
   end
