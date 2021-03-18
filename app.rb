@@ -1,8 +1,9 @@
 #!/usr/bin/ruby -w
 
-require "./CMDList/list.rb"
-require "./CMDList/list-item.rb"
+require "./BTLR/list.rb"
+require "./BTLR/list-item.rb"
 
-l = CMDList::List.new
+l = BTLR::List.new
+
 
 

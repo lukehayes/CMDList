@@ -1,5 +1,4 @@
-module CMDList
-
+module BTLR
   class ListItem
 
     attr_reader :task,
@@ -17,5 +16,4 @@ module CMDList
     end
 
   end
-
 end
