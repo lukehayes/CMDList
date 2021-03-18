@@ -1,4 +1,8 @@
 module BTLR
+  # Class is a container that holds a task. 
+  #
+  # A task is simply a description string and a time
+  # stamp created when the object is created.
   class ListItem
 
     attr_reader :task,
