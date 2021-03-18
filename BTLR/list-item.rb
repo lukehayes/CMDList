@@ -19,5 +19,13 @@ module BTLR
       return "Task: #{@task} :: #{@created_at} :: #{@completed}"
     end
 
+    private
+
+    # Return two new line characters.
+    def new_line
+      "\n\n"
+    end
+
+
   end
 end
