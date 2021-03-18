@@ -16,7 +16,7 @@ module BTLR
     end
 
     def to_s
-      return "Task: #{@task} :: #{@created_at} :: #{@completed}"
+      return "Task: #{@task} :: #{@created_at} :: #{@completed} #{new_line}"
     end
 
     private
