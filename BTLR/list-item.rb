@@ -9,7 +9,7 @@ module BTLR
                 :created_at,
                 :completed
     
-    def initialize(task, created_at)
+    def initialize(task, created_at = Time.now)
       @task = task
       @created_at = created_at
       @completed = false
