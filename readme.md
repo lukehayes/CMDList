@@ -1,3 +1,3 @@
-# CMDList
+# BTLR
 
-A todo list app for the command line, written in Ruby.
+A todo list application for the command line, written in Ruby.
