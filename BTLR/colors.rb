@@ -26,4 +26,9 @@ module Color
     "\e[00;9m #{str}  #{clear}"
   end
 
+  # Color the output green and then strike-through.
+  def self.completed(str)
+    "\e[32;09m #{str}  #{clear}"
+  end
+
 end
