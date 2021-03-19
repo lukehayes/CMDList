@@ -3,7 +3,7 @@
 module Color
 
   def self.clear
-    "\e[00;00m"
+    "\e[00m"
   end
 
   def self.red(str)
