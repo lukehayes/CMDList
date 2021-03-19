@@ -327,4 +327,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Text files like our 'database' task list
+*.txt
+
 # End of https://www.toptal.com/developers/gitignore/api/ruby,rails,rubymine,vim,windows,osx,linux,code
