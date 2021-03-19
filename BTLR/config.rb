@@ -11,6 +11,26 @@ module BTLR
       def initialize
           @default_filename = "BTLR-tasks.txt"
       end
+
+      # Returns a hash containing all of the command line options.
+      # 
+      # TODO - Refactoring necessary. Need to find suitable
+      #        design pattern.
+      def options
+        {
+          a: {
+            flag: "-a",
+            desc: "Show all of the tasks in your list.",
+            usage: "btlr -a"
+          },
+
+          n: {
+            flag: "-n",
+            desc: "Add a new task to your list.",
+            usage: "btlr -n <string>"
+          }
+        }
+      end
     
   end
 end
