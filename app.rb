@@ -1,4 +1,4 @@
-#!/usr/bin/ruby -w
+#!/usr/bin/ruby
 
 require "./BTLR/list.rb"
 require "./BTLR/list-item.rb"
