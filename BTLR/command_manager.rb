@@ -13,6 +13,13 @@ module BTLR
       length = ARGV.length
       length > 1 && length % 2 == 0
     end
+
+    private
+
+    # Check if the obj is a Hash
+    def hash?(obj)
+      obj.class === "Hash"
+    end
     
   end
 end
