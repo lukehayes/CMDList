@@ -18,7 +18,7 @@ module BTLR
 
     # Check if the obj is a Hash
     def hash?(obj)
-      obj.class === "Hash"
+      obj.respond_to? :to_hash
     end
     
   end
