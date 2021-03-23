@@ -16,7 +16,7 @@ module BTLR
 
     # Manages incoming flag options sent in from the 
     # command line.
-    def command(config)
+    def manage(config)
       options = config.options
       flag = ARGV[0].intern
       options[flag]
