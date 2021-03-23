@@ -21,13 +21,15 @@ module BTLR
           "-a" => {
             "flag" => "-a",
             "desc" => "Show all of the tasks in your list.",
-            "usage" => "btlr -a"
+            "usage" => "btlr -a",
+            "method" => "show_all"
           },
 
           "-n" => {
             "flag" => "-n",
             "desc" => "Add a new task to your list.",
-            "usage" => "btlr -n <string>"
+            "usage" => "btlr -n <string>",
+            "method" => "add_task"
           }
         }
       end
