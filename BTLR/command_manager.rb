@@ -18,8 +18,12 @@ module BTLR
     # command line.
     def manage(config)
       options = config.options
-      flag = ARGV[0].intern
+      flag = ARGV[0]
       options[flag]
+    end
+
+    def flag_info(obj)
+      puts "#{obj}"
     end
 
     private

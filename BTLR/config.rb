@@ -18,16 +18,16 @@ module BTLR
       #        design pattern.
       def options
         {
-          a: {
-            flag: "-a",
-            desc: "Show all of the tasks in your list.",
-            usage: "btlr -a"
+          "-a" => {
+            "flag" => "-a",
+            "desc" => "Show all of the tasks in your list.",
+            "usage" => "btlr -a"
           },
 
-          n: {
-            flag: "-n",
-            desc: "Add a new task to your list.",
-            usage: "btlr -n <string>"
+          "-n" => {
+            "flag" => "-n",
+            "desc" => "Add a new task to your list.",
+            "usage" => "btlr -n <string>"
           }
         }
       end
