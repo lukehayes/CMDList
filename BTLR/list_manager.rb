@@ -10,8 +10,9 @@ module BTLR
       File.read(@config.default_filename).each_line {|line| puts line }
     end
 
+    # Add a new task to the list.
     def add_task(task)
-      File.write(@config.default_filename, "#{task}\n", mode: "a+")
+      File.write(@config.default_filename, "#{BTLR::ListItem.new(task)}\n", mode: "a+")
     end
   end
 end
