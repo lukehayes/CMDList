@@ -9,7 +9,7 @@ module BTLR
 
     # Is the current command thats passed in formatted
     # correctly? i.e -n "some value?".
-    def correct?
+    def correct_format?
       length = ARGV.length
       length > 1 && length % 2 == 0
     end
