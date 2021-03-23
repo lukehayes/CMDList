@@ -14,6 +14,14 @@ module BTLR
       length > 1 && length % 2 == 0
     end
 
+    # Manages incoming flag options sent in from the 
+    # command line.
+    def command(config)
+      options = config.options
+      flag = ARGV[0].intern
+      options[flag]
+    end
+
     private
 
     # Check if the obj is a Hash
