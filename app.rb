@@ -1,19 +1,16 @@
 #!/usr/bin/ruby
 
-require "./BTLR/list.rb"
-require "./BTLR/list-item.rb"
-require "./BTLR/config.rb"
-require "./BTLR/colors.rb"
+# Quick and dirty way of importing all of the files
+Dir.glob("BTLR/**/*.rb") {|file| require_relative file }
 
 # Create a config here so that BTLR has access
 # to everything that it needs from the start.
 config = BTLR::Config.new
 
-l = BTLR::List.new
-li = BTLR::ListItem.new("A goal to hit")
+# Setup a CommandManager to manage incoming options flags.
+manager = BTLR::CommandManager.new
+opt = manager.command(config)
 
-task_str = "Task: #{li.task} :: #{li.created_at.to_s} :: #{li.completed} \n\n"
 
-# Write the contents of the task to a file.
-File.write(config.default_filename, li, mode:"a")
+
 
