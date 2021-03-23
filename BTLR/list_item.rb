@@ -1,7 +1,4 @@
-
 require_relative "colors"
-
-
 module BTLR
   # Class is a container that holds a task. 
   #
@@ -20,7 +17,10 @@ module BTLR
     end
 
     def to_s
-      "Task: #{@task} :: #{@created_at} :: #{Color.red(@completed)} #{new_line}"
+      task = "#{Color.yellow(@task)}"
+      created = "#{Color.blue(@created_at)}"
+      completed = "#{Color.red(@completed})"
+      "Task: #{task} #{created} #{completed} #{new_line}"
     end
 
     private
