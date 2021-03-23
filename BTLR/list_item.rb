@@ -11,7 +11,7 @@ module BTLR
                 :completed
     
     def initialize(task, created_at = Time.now)
-      @task = task
+      @task = title_case(task)
       @created_at = created_at
       @completed = false
     end
@@ -19,7 +19,7 @@ module BTLR
     def to_s
       task = "#{Color.yellow(@task)}"
       created = "#{Color.blue(@created_at)}"
-      completed = "#{Color.red(@completed})"
+      completed = "#{@completed ? Color.green(@completed) : Color.red(@completed)}"
       "Task: #{task} #{created} #{completed} #{new_line}"
     end
 
@@ -28,6 +28,10 @@ module BTLR
     # Return two new line characters.
     def new_line
       "\n\n"
+    end
+
+    def title_case(task)
+      task.split.map(&:capitalize).join(' ')
     end
 
 
