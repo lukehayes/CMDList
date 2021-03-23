@@ -12,11 +12,18 @@ list = BTLR::ListManager.new(config)
 manager = BTLR::CommandManager.new
 opt = manager.manage(config)
 
-
 # Check if the option is available, then call it.
-if list.respond_to? opt['method']
-  list.send(opt['method'])
-else
-  raise BTLR::Exception::CommandError.new
+#if list.respond_to? opt['method']
+  #list.send(opt['method'])
+#else
+  #raise BTLR::Exception::CommandError.new
+#end
+
+case ARGV[0]
+when "-a"
+  list.show_all()
+when "-n"
+  list.add_task(ARGV[1])
 end
+
 
