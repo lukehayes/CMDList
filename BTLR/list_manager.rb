@@ -1,5 +1,5 @@
 module BTLR
-  class List
+  class ListManager
 
     def initialize()
     end
