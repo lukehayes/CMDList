@@ -23,7 +23,7 @@ module BTLR
     end
 
     def flag_info(obj)
-      puts "#{obj}"
+      puts "Desc: #{obj['desc']} \nUsage: #{obj['usage']}"
     end
 
     private
