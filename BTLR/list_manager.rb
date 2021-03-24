@@ -14,5 +14,12 @@ module BTLR
     def add_task(task)
       File.write(@config.default_filename, "#{BTLR::ListItem.new(task)}\n", mode: "a+")
     end
+
+    # Create a new list file.
+    def create_list(name)
+      fh = File.new("#{name}.txt", "w")
+      fh.close
+    end
+
   end
 end
