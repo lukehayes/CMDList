@@ -1,3 +1,6 @@
+require_relative "colors"
+require_relative "formatter"
+
 module BTLR
   class ListManager
 
@@ -19,6 +22,15 @@ module BTLR
     def create_list(name)
       fh = File.new("#{name}.txt", "w")
       fh.close
+    end
+
+    def delete_list(name)
+      file = "#{name}.txt"
+      if File.delete(file)
+        puts ""
+        puts "#{Color.green("List #{file} has been removed successfully.")}"
+        puts ""
+      end
     end
 
   end
