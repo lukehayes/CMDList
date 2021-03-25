@@ -30,6 +30,12 @@ module BTLR
             "desc" => "Add a new task to your list.",
             "usage" => "btlr -n <string>",
             "method" => "add_task"
+          },
+          "-c" => {
+            "flag" => "-c",
+            "desc" => "Create a completely new list.",
+            "usage" => "btlr -c <name of list>",
+            "method" => "create_list"
           }
         }
       end
