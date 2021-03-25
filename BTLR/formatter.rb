@@ -16,6 +16,13 @@ module BTLR
       print "\n"
     end
 
+    # Add an empty space above and below the
+    # output string str.
+    def self.spaced(str)
+      puts " "
+      puts str
+      puts " "
+    end
 
   end
 end
